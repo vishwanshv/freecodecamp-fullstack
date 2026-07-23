@@ -1,0 +1,90 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #f5f5f5;
+}
+
+.pricing-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 12px;
+
+    width: 700px;
+    margin: 20px auto;
+    padding: 10px;
+
+    border: 2px solid black;
+    box-sizing: border-box;
+}
+
+.pricing-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  flex: 0 0 200px;
+
+  border: 2px solid black;
+  background: white;
+  padding: 15px;
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-card:hover{
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.basic-plan {
+  order: 0;
+  box-shadow: 4px 4px 8px rgba(0,0,0,0.3);
+}
+
+.pro-plan {
+  order: 1;
+  flex-grow: 2;
+  background: #eef6ff;
+  box-shadow: 4px 4px 8px rgba(0,0,0,0.3);
+}
+
+.premium-plan {
+  order: 2;
+  box-shadow: 4px 4px 8px rgba(0,0,0,0.3);
+}
+
+h2 {
+  margin-bottom: 5px;
+}
+
+p {
+  font-weight: bold;
+  margin-top: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  flex-grow: 1;
+}
+
+li {
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+button {
+  background: #ffc72c;
+  border: 2px solid transparent;
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.pricing-card button:hover{
+  transform: scale(1.02);
+  border-color: #ffc12c;
+}
