@@ -4,7 +4,8 @@ An accessible HTML/CSS quiz page built as part of the freeCodeCamp Responsive We
 
 ## Preview
 
-![Quiz WebPage](image1.png)(image2.jpeg)
+![Quiz WebPage](image1.png)
+![Quiz WebPage](image2.jpeg)
 
 ## Technical Highlights
 
