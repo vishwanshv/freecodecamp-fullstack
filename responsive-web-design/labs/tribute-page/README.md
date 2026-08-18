@@ -3,7 +3,7 @@
 ## Preview
 
 ![Tribute Page](image1.png)
-![Tribute Page](image1.png)
+![Tribute Page](image.png)
 
 ## Technical Highlights
 
