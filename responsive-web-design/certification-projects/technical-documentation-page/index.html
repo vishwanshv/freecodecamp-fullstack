@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Documentation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <nav id="navbar">
+    <header>CSS Documentation</header>
+
+    <a class="nav-link" href="#Introduction_to_CSS">
+      Introduction to CSS
+    </a>
+
+    <a class="nav-link" href="#CSS_Syntax">
+      CSS Syntax
+    </a>
+
+    <a class="nav-link" href="#Selectors">
+      Selectors
+    </a>
+
+    <a class="nav-link" href="#The_Box_Model">
+      The Box Model
+    </a>
+
+    <a class="nav-link" href="#CSS_Positioning">
+      CSS Positioning
+    </a>
+  </nav>
+
+
+  <main id="main-doc">
+
+    <!-- INTRODUCTION -->
+
+    <section class="main-section" id="Introduction_to_CSS">
+      <header>Introduction to CSS</header>
+
+      <p>
+        CSS stands for Cascading Style Sheets. It is a language used to control
+        the visual appearance and presentation of HTML documents. While HTML
+        provides the structure and content of a webpage, CSS is responsible for
+        determining how that content looks.
+      </p>
+
+      <p>
+        Using CSS, developers can control colors, fonts, spacing, borders,
+        backgrounds, positioning, and the overall layout of a webpage. CSS
+        makes it possible to separate the presentation of a website from its
+        underlying structure.
+      </p>
+
+      <p>
+        For example, HTML can create a heading, paragraph, button, or image.
+        CSS can then determine the color of the heading, the size of the text,
+        the spacing around the button, and where the image appears on the page.
+      </p>
+
+      <p>
+        CSS is used by nearly every modern website. It allows developers to
+        create layouts that work across different screen sizes, including
+        desktop computers, tablets, and mobile phones.
+      </p>
+
+      <code>
+h1 {
+  color: blue;
+}
+      </code>
+
+      <p>
+        The example above selects all h1 elements and changes their text color
+        to blue. A CSS rule usually consists of a selector followed by one or
+        more declarations.
+      </p>
+
+      <code>
+p {
+  font-size: 18px;
+  color: #333;
+}
+      </code>
+
+      <p>
+        CSS can be added to a webpage in several ways. Developers can use
+        inline styles, internal style elements, or external CSS files. External
+        stylesheets are commonly used because they allow multiple webpages to
+        share the same styles.
+      </p>
+
+      <ul>
+        <li>HTML provides the structure of a webpage.</li>
+        <li>CSS controls the appearance and presentation.</li>
+        <li>CSS can control colors, fonts, spacing, and layouts.</li>
+        <li>External stylesheets help keep code organized.</li>
+      </ul>
+    </section>
+
+
+    <!-- CSS SYNTAX -->
+
+    <section class="main-section" id="CSS_Syntax">
+      <header>CSS Syntax</header>
+
+      <p>
+        A CSS rule is made up of a selector and a declaration block. The
+        selector identifies which HTML elements should receive the styles.
+      </p>
+
+      <p>
+        The declaration block is surrounded by curly braces. Inside the braces,
+        each declaration contains a property and a value separated by a colon.
+      </p>
+
+      <code>
+p {
+  color: green;
+}
+      </code>
+
+      <p>
+        In this example, p is the selector. The color property determines the
+        text color, and green is the value assigned to that property.
+      </p>
+
+      <p>
+        Multiple declarations can be placed inside the same declaration block.
+        Each declaration should normally end with a semicolon so that additional
+        properties can be added easily.
+      </p>
+
+      <code>
+h2 {
+  color: purple;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+      </code>
+
+      <p>
+        CSS properties describe different visual characteristics of an element.
+        For example, the width property controls an element's width, while the
+        background-color property controls the color behind its content.
+      </p>
+
+      <p>
+        Proper CSS syntax is important because browsers must be able to
+        understand each rule. Missing braces, colons, or other characters can
+        cause styles to fail or produce unexpected results.
+      </p>
+
+      <ul>
+        <li>A selector chooses the element to style.</li>
+        <li>A property defines what should be changed.</li>
+        <li>A value determines how the property should be applied.</li>
+        <li>Declarations are placed inside curly braces.</li>
+      </ul>
+    </section>
+
+
+    <!-- SELECTORS -->
+
+    <section class="main-section" id="Selectors">
+      <header>Selectors</header>
+
+      <p>
+        CSS selectors are patterns used to select HTML elements before applying
+        styles to them. Different selectors allow developers to target elements
+        in different ways.
+      </p>
+
+      <p>
+        An element selector targets HTML elements by their tag name. For
+        example, using p as a selector will target every paragraph element on
+        the page.
+      </p>
+
+      <code>
+p {
+  color: black;
+}
+      </code>
+
+      <p>
+        Class selectors target elements that have a particular class attribute.
+        A class selector begins with a period followed by the class name.
+      </p>
+
+      <code>
+.button {
+  background-color: blue;
+}
+      </code>
+
+      <p>
+        ID selectors target an element using its id attribute. An ID selector
+        begins with a hash symbol followed by the ID value.
+      </p>
+
+      <code>
+#header {
+  padding: 20px;
+}
+      </code>
+
+      <p>
+        Attribute selectors allow you to target elements based on the presence
+        or value of an attribute. They are useful when you want to select
+        elements with specific attributes or attribute values.
+      </p>
+
+      <code>
+input[type="text"] {
+  border: 1px solid gray;
+}
+      </code>
+
+      <p>
+        CSS also provides more advanced selectors, including descendant
+        selectors, child selectors, pseudo-classes, and pseudo-elements.
+        These allow developers to target elements based on their relationship
+        to other elements or their current state.
+      </p>
+
+      <ul>
+        <li>Element selectors target HTML tags.</li>
+        <li>Class selectors begin with a period.</li>
+        <li>ID selectors begin with a hash symbol.</li>
+        <li>Attribute selectors target specific attributes.</li>
+        <li>More advanced selectors can target relationships and states.</li>
+      </ul>
+    </section>
+
+
+    <!-- BOX MODEL -->
+
+    <section class="main-section" id="The_Box_Model">
+      <header>The Box Model</header>
+
+      <p>
+        Every HTML element displayed on a webpage can be thought of as a
+        rectangular box. CSS uses the box model to determine how elements take
+        up space and interact with other elements.
+      </p>
+
+      <p>
+        The CSS box model consists of four main areas: content, padding, border,
+        and margin. Understanding these areas is important when creating
+        layouts and controlling spacing.
+      </p>
+
+      <p>
+        The content area contains the actual text, images, or other information
+        inside an element. The width and height properties usually control the
+        size of this area.
+      </p>
+
+      <code>
+div {
+  width: 300px;
+  height: 150px;
+}
+      </code>
+
+      <p>
+        Padding creates space between an element's content and its border.
+        Increasing padding makes the inside of an element appear larger without
+        changing the size of the actual content.
+      </p>
+
+      <code>
+div {
+  padding: 20px;
+}
+      </code>
+
+      <p>
+        A border surrounds the padding and content areas. Borders can have
+        different widths, colors, and styles.
+      </p>
+
+      <code>
+div {
+  border: 2px solid black;
+}
+      </code>
+
+      <p>
+        Margin creates space outside an element. Margins are used to separate
+        elements from one another and control the distance between different
+        parts of a webpage.
+      </p>
+
+      <p>
+        The box-sizing property can change how width and height calculations
+        work. Using border-box makes the declared width and height include an
+        element's padding and border.
+      </p>
+
+      <code>
+* {
+  box-sizing: border-box;
+}
+      </code>
+
+      <ul>
+        <li>Content contains the actual information.</li>
+        <li>Padding creates space inside an element.</li>
+        <li>Border surrounds the content and padding.</li>
+        <li>Margin creates space outside an element.</li>
+        <li>The box model affects an element's total size.</li>
+      </ul>
+    </section>
+
+
+    <!-- POSITIONING -->
+
+    <section class="main-section" id="CSS_Positioning">
+      <header>CSS Positioning</header>
+
+      <p>
+        CSS positioning controls how elements are placed on a webpage. The
+        position property can be used together with properties such as top,
+        right, bottom, and left to control an element's location.
+      </p>
+
+      <p>
+        The default position value for most elements is static. Static elements
+        follow the normal flow of the document and are placed according to the
+        order in which they appear in the HTML.
+      </p>
+
+      <code>
+.box {
+  position: static;
+}
+      </code>
+
+      <p>
+        Relative positioning keeps an element in the normal document flow while
+        allowing it to be moved relative to its original position.
+      </p>
+
+      <code>
+.box {
+  position: relative;
+  top: 20px;
+  left: 10px;
+}
+      </code>
+
+      <p>
+        Absolute positioning removes an element from the normal document flow.
+        The element can then be positioned relative to its nearest positioned
+        ancestor.
+      </p>
+
+      <code>
+.box {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+      </code>
+
+      <p>
+        Fixed positioning places an element relative to the browser viewport.
+        A fixed element remains in the same location even when the user scrolls
+        the page.
+      </p>
+
+      <code>
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+      </code>
+
+      <p>
+        Sticky positioning behaves similarly to relative positioning until a
+        specified scroll position is reached. After that point, the element can
+        behave similarly to a fixed element within its containing area.
+      </p>
+
+      <p>
+        Understanding the different position values is important for creating
+        navigation bars, overlays, tooltips, custom layouts, and many other
+        user interface designs.
+      </p>
+
+      <ul>
+        <li>Static positioning follows the normal document flow.</li>
+        <li>Relative positioning moves an element from its normal position.</li>
+        <li>Absolute positioning uses a positioned ancestor as a reference.</li>
+        <li>Fixed positioning attaches an element to the viewport.</li>
+        <li>Sticky positioning responds to the user's scroll position.</li>
+      </ul>
+    </section>
+
+  </main>
+
+</body>
+</html>
