@@ -1,0 +1,125 @@
+:root {
+  --color0: white;
+  --color1: #c8f7c5;
+  --color2: #98f596;
+  --color3: #48f548;
+  --color4: #00c900;
+  --color5: #008000;
+
+  --solid-border: 2px solid black;
+  --dashed-border: 2px dashed black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #b0d4c3;
+  font-family: Arial, sans-serif;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 20px auto;
+}
+
+caption {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+th {
+  font-size: 20px;
+  padding: 5px 15px;
+}
+
+.time {
+  text-align: right;
+  padding-right: 10px;
+}
+
+td {
+  width: 120px;
+  height: 24px;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+
+tbody tr:first-child td {
+  border-top: var(--solid-border);
+}
+
+/* Availability colors */
+
+.available-0 {
+  background-color: var(--color0);
+}
+
+.available-1 {
+  background-color: var(--color1);
+}
+
+.available-2 {
+  background-color: var(--color2);
+}
+
+.available-3 {
+  background-color: var(--color3);
+}
+
+.available-4 {
+  background-color: var(--color4);
+}
+
+.available-5 {
+  background-color: var(--color5);
+}
+
+/* Row borders */
+
+.sharp td {
+  border-bottom: var(--solid-border);
+}
+
+.half td {
+  border-bottom: var(--dashed-border);
+}
+
+/* Legend */
+
+#legend {
+  width: 180px;
+  margin: 40px auto;
+  text-align: center;
+  font-size: 20px;
+}
+
+#legend-gradient {
+  width: 120px;
+  height: 28px;
+  border: 2px solid black;
+
+  background-image: linear-gradient(
+    to right,
+    var(--color0) 0%,
+    var(--color0) 16%,
+    var(--color1) 16%,
+    var(--color1) 33%,
+    var(--color2) 33%,
+    var(--color2) 50%,
+    var(--color3) 50%,
+    var(--color3) 66%,
+    var(--color4) 66%,
+    var(--color4) 83%,
+    var(--color5) 83%,
+    var(--color5) 100%
+  );
+}
+
+#legend-gradient-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
