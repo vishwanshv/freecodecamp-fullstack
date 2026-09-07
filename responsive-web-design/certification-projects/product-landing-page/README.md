@@ -1,6 +1,6 @@
 # Product Landing Page
 
-[Live Demo](https://vishwanshv.github.io/freecodecamp-fullstack/certification-projects/product-landing-page/)
+[Live Demo](https://vishwanshv.github.io/freecodecamp-fullstack/responsive-web-design/certification-projects/product-landing-page/)
 
 A responsive product landing page for **Original Trombones**, built as part of the freeCodeCamp Responsive Web Design certification.
 
