@@ -1,0 +1,332 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #eee;
+  color: #000;
+}
+
+
+/* =========================
+   HEADER / NAVBAR
+========================= */
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 10px 30px;
+
+  background-color: #eee;
+  z-index: 1000;
+}
+
+#header-img {
+  width: 310px;
+  max-width: 100%;
+}
+
+#nav-bar {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-link {
+  color: #000;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+
+/* =========================
+   MAIN
+========================= */
+
+main {
+  padding-top: 80px;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+#hero {
+  min-height: 260px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 15px;
+}
+
+#hero h1 {
+  font-size: 28px;
+  margin-bottom: 24px;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#email {
+  width: 310px;
+  height: 32px;
+  padding: 5px 8px;
+  font-size: 14px;
+}
+
+#submit {
+  margin-top: 17px;
+  padding: 8px 23px;
+
+  border: none;
+  background-color: #f1c40f;
+
+  font-size: 18px;
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+
+/* =========================
+   FEATURES
+========================= */
+
+#features {
+  width: 80%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+
+  min-height: 140px;
+}
+
+.icon {
+  width: 120px;
+  flex-shrink: 0;
+
+  text-align: center;
+  font-size: 48px;
+}
+
+.feature-text {
+  flex: 1;
+}
+
+.feature-text h2 {
+  font-size: 26px;
+  margin-bottom: 2px;
+}
+
+.feature-text p {
+  font-size: 18px;
+  line-height: 1.25;
+}
+
+
+/* =========================
+   VIDEO
+========================= */
+
+#how-it-works {
+  display: flex;
+  justify-content: center;
+
+  margin: 45px 0;
+}
+
+#video {
+  width: 630px;
+  height: 355px;
+  border: none;
+}
+
+
+/* =========================
+   PRICING
+========================= */
+
+#pricing {
+  display: flex;
+  justify-content: space-around;
+  gap: 22px;
+
+  padding: 10px;
+  margin-bottom: 45px;
+}
+
+.pricing-card {
+  width: 31%;
+  min-height: 350px;
+
+  text-align: center;
+
+  border: 1px solid #222;
+}
+
+.card-title {
+  padding: 18px 10px;
+
+  background-color: #ddd;
+
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.pricing-card h2 {
+  margin: 20px 0;
+
+  font-size: 28px;
+}
+
+.pricing-card p {
+  margin: 12px 0;
+
+  font-size: 18px;
+}
+
+.pricing-card button {
+  margin-top: 25px;
+  padding: 10px 23px;
+
+  border: none;
+  background-color: #f1c40f;
+
+  font-size: 18px;
+
+  cursor: pointer;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+  min-height: 90px;
+
+  padding: 25px 30px;
+
+  background-color: #ddd;
+
+  text-align: right;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: flex-end;
+  gap: 25px;
+
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  color: #000;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+footer p {
+  font-size: 15px;
+}
+
+
+/* =========================
+   MEDIA QUERY
+========================= */
+
+@media (max-width: 700px) {
+
+  #header {
+    height: auto;
+
+    flex-direction: column;
+    gap: 10px;
+
+    padding: 10px;
+  }
+
+  #header-img {
+    width: 250px;
+  }
+
+  #nav-bar {
+    gap: 20px;
+  }
+
+  .nav-link {
+    font-size: 15px;
+  }
+
+  main {
+    padding-top: 120px;
+  }
+
+  #hero h1 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  #features {
+    width: 90%;
+  }
+
+  .feature {
+    min-height: 160px;
+  }
+
+  .icon {
+    width: 80px;
+    font-size: 35px;
+  }
+
+  .feature-text h2 {
+    font-size: 21px;
+  }
+
+  .feature-text p {
+    font-size: 16px;
+  }
+
+  #video {
+    width: 90%;
+    height: 250px;
+  }
+
+  #pricing {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pricing-card {
+    width: 90%;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  .footer-links {
+    justify-content: center;
+  }
+}
