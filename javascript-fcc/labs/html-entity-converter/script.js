@@ -21,16 +21,13 @@ function convertHTML(str) {
 }
 
 console.log(convertHTML("Dolce & Gabbana"));
+// "Dolce &amp; Gabbana"
 
 console.log(convertHTML("Hamburgers < Pizza < Tacos"));
+// "Hamburgers &lt; Pizza &lt; Tacos"
 
 console.log(convertHTML('Stuff in "quotation marks"'));
+// "Stuff in &quot;quotation marks&quot;"
 
 console.log(convertHTML("Schindler's List"));
-
-/*
-Dolce & Gabbana
-Hamburgers < Pizza < Tacos
-Stuff in "quotation marks"
-Schindler's List
-*/
+// "Schindler&apos;s List"
