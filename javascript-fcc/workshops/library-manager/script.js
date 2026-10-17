@@ -1,3 +1,6 @@
+// Detailed explanation of this code in chatgpt chat:JS Workshop Codes.
+// The explanation is to especially understand arrow functions and callback functions along with map, filter and reduce methods
+
 const library = [
   {
     title: 'Your Next Five Moves: Master the Art of Business Strategy',
