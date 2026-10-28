@@ -79,3 +79,8 @@ h1 {
     font-size: 26px;
   }
 }
+
+.filled {
+  color: red;
+  background-color: transparent;
+}
