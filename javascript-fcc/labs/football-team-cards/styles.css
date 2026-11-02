@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0a0a23;
+  color: white;
+  font-family: Georgia, serif;
+}
+
+main {
+  width: 100%;
+  padding: 8px 20px 0;
+}
+
+h1 {
+  text-align: center;
+  font-size: 36px;
+  margin: 0 0 25px;
+}
+
+.team-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  font-size: 23px;
+}
+
+.team-info p {
+  margin: 0;
+}
+
+.filter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  margin: 24px 0;
+  font-size: 20px;
+}
+
+select {
+  font-size: 16px;
+  min-width: 170px;
+  cursor: pointer;
+}
+
+#player-cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 360px));
+  justify-content: center;
+  gap: 45px;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.player-card {
+  background-color: #f5f6f7;
+  color: #000;
+  min-height: 105px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.player-card h2 {
+  font-size: 26px;
+  margin: 0;
+}
+
+.player-card p {
+  font-size: 18px;
+  margin: 3px 0 0;
+}
+
+footer {
+  text-align: center;
+  font-size: 16px;
+  padding: 25px 0 5px;
+}
+
+@media (max-width: 600px) {
+  .team-info {
+    flex-direction: column;
+    font-size: 19px;
+  }
+
+  .filter-container {
+    flex-wrap: wrap;
+    font-size: 17px;
+  }
+
+  #player-cards {
+    grid-template-columns: minmax(0, 360px);
+    gap: 25px;
+  }
+
+  .player-card h2 {
+    font-size: 23px;
+  }
+}

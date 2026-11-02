@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Football Team Cards</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <main>
+    <h1>Team stats</h1>
+
+    <section class="team-info">
+      <p>Team: <span id="team"></span></p>
+      <p>Year: <span id="year"></span></p>
+      <p>Head coach: <span id="head-coach"></span></p>
+    </section>
+
+    <div class="filter-container">
+      <label for="players">Filter Teammates:</label>
+      <select id="players">
+        <option value="all">All Players</option>
+        <option value="forward">Forward</option>
+        <option value="midfielder">Midfielder</option>
+        <option value="defender">Defender</option>
+        <option value="goalkeeper">Goalkeeper</option>
+      </select>
+    </div>
+
+    <section id="player-cards"></section>
+  </main>
+
+  <footer>
+    © freeCodeCamp
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
