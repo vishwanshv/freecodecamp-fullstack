@@ -1,0 +1,60 @@
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+  text-align: center;
+}
+
+main {
+  padding: 60px 20px;
+}
+
+ul {
+  margin: 10px auto;
+  padding: 0;
+  width: 180px;
+  background-color: white;
+  color: black;
+  border: 1px solid #ccc;
+}
+
+li {
+  list-style-type: none;
+  padding: 12px;
+  cursor: pointer;
+}
+
+li:hover {
+  background-color: #ddd;
+}
+
+#theme-switcher-button {
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#status {
+  text-align: center;
+  min-height: 20px;
+  margin-top: 25px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+body.theme-light {
+  background-color: #ffffff;
+  color: #222222;
+}
+
+body.theme-dark {
+  background-color: #1e1e2f;
+  color: #ffffff;
+}
+
+body.theme-ocean {
+  background-color: #b8e3e9;
+  color: #064663;
+}
